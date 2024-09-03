@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pest ID</title>
+<meta name="veiwport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel= "icon" type= "image/ico" href="images/favichrome.png?">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+	*{box-sizing: border-box;}
+
+
+
+/* Stylish */
+
+
+
+.column {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+/* Hover Image Style*/
+
+
+.mask{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pic{
+  width: 800px;
+  position: relative;
+}
+
+img{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.content:hover{
+  opacity: 1;
+}
+
+.content h3{
+  font-size: 40px;
+  color: #00ff84;
+  margin-bottom: 10px;
+}
+
+.content p1{
+  font-size: 20px;
+  color: floralwhite;
+}
+
+.content > *{
+  transform: translate(20px);
+  transition: transform 0.5s;
+}
+
+.content:hover > *{
+  transform: translateY(0px);
+
+}
+
+.button {
+  background: transparent;
+  border: 2px solid #aaff00;
+  border-radius: 5px;
+  color: #aaff00;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+div.w3-container{
+border: 5px;
+border-radius: 2px transparent;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+div.apex{ 
+width:70px; 
+float: left;
+}
+
+div.toptext{
+  font-size: 25px;
+  text-align: left;
+  margin-top: 15px;
+  
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  font: serif;
+}
+
+div.gallery {
+  background-color:#a3c2c2;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+</style>
+
+<head> 
+  <div class="w3-bar w3-cyan">
+    <div class="apex">
+  <img src="Images/Plant_ID.jpg" alt="Plant ID"> </div>
+  <div class="toptext">
+  <b>Pest ID:</b> <i>Helping you identify what those things are on your precious plants!</i> </div>
+</div>
+
+</head>
+<body background="Images/geo_leaves.png">
+
+
+
+<! - - BOSS BAR -- !>
+
+<div class="w3-bar w3-light-green">
+
+<a href="index.html" class="w3-bar-item w3-button w3-hover-green">Home</a>
+<a href="categories.html" class="w3-bar-item w3-button w3-hover-indigo">Categories</a>
+<a href="submission.html" class="w3-bar-item w3-button w3-hover-teal">Submit Photo</a>
+<a href="contact.html" class="w3-bar-item w3-button w3-hover-orange">Contact</a>
+<a href="about.html" class="w3-bar-item w3-button w3-hover-blue">About</a>
+
+</div>
+
+<br>
+
+<div class="w3-container w3-blue-gray">
+  <h2>FEATURED PEST ID:</h2></div>
+  <div class="mask">
+    <div class="pic">
+      <img src="Images/ladybug_slayerRT.jpg" alt="Ladybug larvae on tree branch.">
+      <div class="content">
+        <h3>Lady Bug Larvae</h3>
+        <p1> Before you mistake this little critter for a pest to be exterminated with extreme prejudice, hold up, wait a minute, this is an ally! This albino Godzilla-esque bug is the spawn of the ladybug and one of it's favorite foods are aphids so roll out the red carpet for these little warriors which can help you fight the war against the true pests!</p1>
+      </div>
+    </div>
+  </div>
+
+
+
+<br>
+
+<div class="w3-container w3-light-blue">
+  <h2> TRENDING ID's:</h2> </div>
+
+<div class="w3-container"> 
+  <div class="gallery">
+  <a target="_blank" href="Images/latest_green_aphid.jpg">
+    <img src="Images/latest_green_aphid.jpg" alt="Green Aphid on Kale leaf" width="600" height="400">
+  </a>
+  <div class="desc">Green Aphids on a Kale leaf</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="Images/latest_rust.jpg">
+    <img src="Images/latest_rust.jpg" alt="Rust fungus on avocado leaf" width="600" height="400">
+  </a>
+  <div class="desc">Rust on an Avocado leaf</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/black_big_bhotay_aphids.jpg">
+    <img src="Images/black_big_bhotay_aphids.jpg" alt="Black aphids on lime leaf" width="600" height="400">
+  </a>
+  <div class="desc">Black aphids on lime leaf</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/ladybug_larvae.jpg">
+    <img src="Images/ladybug_larvae.jpg" alt="ladybug larvae on lime leaf" width="600" height="400">
+  </a>
+  <div class="desc">Ladybug larvae on lime leaf</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/rasta_cat.jpg">
+    <img src="Images/rasta_cat.jpg" alt="Rasta caterpillar on frangipani" width="600" height="400">
+  </a>
+  <div class="desc">Rasta caterpillar on frangipani</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/latest_rust.jpg">
+    <img src="Images/latest_rust.jpg" alt="Rust fungus on avocado leaf" width="600" height="400">
+  </a>
+  <div class="desc">Rust on an Avocado leaf</div>
+</div>
+</div>
+
+<br>
+
+<div class="w3-container w3-aqua">
+  <h2> KNOW WHAT THESE ARE?:</h2> </div>
+
+<div class="w3-container">
+<div class="gallery">
+  <a target="_blank" href="Images/cotton_cat.jpg">
+    <img src="Images/cotton_cat.jpg" alt="Caterpillar on avocado leaf" width="600" height="400">
+  </a>
+  <div class="desc">Caterpillar on Avocado leaf</div>
+  <button>ID </button>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/unknown_cat.jpg">
+    <img src="Images/unknown_cat.jpg" alt="Caterpillar on cabbage leaf" width="600" height="400">
+  </a>
+  <div class="desc">Caterpillar on Cabbage leaf</div>
+  <button>ID </button>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/unknown_bacteria_tomato.jpg">
+    <img src="Images/unknown_bacteria_tomato.jpg" alt="black and brown spots on tomato leaves" width="600" height="400">
+  </a>
+  <div class="desc">Bacterial infection on tomato plant</div>
+  <button>ID </button>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/spikey_cat.jpg">
+    <img src="Images/spikey_cat.jpg" alt="spikey caterpillar on avocado leaf" width="600" height="400">
+  </a>
+  <div class="desc">Spikey caterpillar on avocado leaf</div>
+  <button>ID </button>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/armor_eggs.jpg">
+    <img src="Images/armor_eggs.jpg" alt="Cluster of dark brown eggs on grass blade" width="600" height="400">
+  </a>
+  <div class="desc">Egg cluster on grass blade</div>
+  <button>ID </button>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/white_egg_raft.jpg">
+    <img src="Images/white_egg_raft.jpg" alt="a flat pile of white segments" width="600" height="400">
+  </a>
+  <div class="desc">Egg cluster on Avocado leaf</div>
+  <button>ID </button>
+</div> </div>
+
+
+
+<div class="w3-bar w3-border w3-light-grey">
+  <a href="https://www.tiktok.com/" class="w3-bar-item w3-button w3-pink">Tik Tok </a>
+  <a href="https://wa.me/18683637885" class="w3-button w3-green">WhatsApp</a>
+  <a href="https://www.instagram.com/triggerhappiest/" class="w3-button w3-orange">Instagram</a>
+    <a href="https://x.com/TriGGaPoP1" class="w3-button w3-blue">X/Twitter</a>
+</div>
+<div class="w3-container w3-light-green" class="footer">
+   <h5> &copy; 2024-2024 Plant ID. All rights reserved, no AI training permission plz and thx ( •̀ ω •́ )✧ </h5>
+  </div>
+</body>
+</html>
